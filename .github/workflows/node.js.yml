@@ -11,19 +11,13 @@ on:
 
 jobs:
   build:
-
     runs-on: self-hosted
-
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/cache@3.0.5
     - name: Setup yarn ${{ matrix.node-version }}
       uses: DerYeger/yarn-setup-action@v1.0.1
       with:
         # The version of Node.js that will be used
-        node-version: ${{ matrix.node-version }}
+        node-version: 16
     - run: yarn build
