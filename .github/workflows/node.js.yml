@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Cache
-      uses: actions/cache@3.0.5
+      uses: actions/Cache@3.0.5
     - name: Setup yarn ${{ matrix.node-version }}
       uses: DerYeger/yarn-setup-action@v1.0.1
       with:
