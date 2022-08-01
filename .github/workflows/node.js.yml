@@ -27,8 +27,7 @@ jobs:
         # The version of Node.js that will be used
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - run: yarn ci
-    - run: yarn run build --if-present
+    - run: yarn build
     - name: Download a Build Artifact
       uses: actions/download-artifact@v3.0.0
       with:
