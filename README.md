@@ -1,4 +1,4 @@
-# [M4TT72 | Terminal](https://term.m4tt72.com)
+# [Terminal](https://term.heliac.xyz)
 
 A terminal style website
 
@@ -33,19 +33,21 @@ docker run -d \
 1. Install dependencies:
 
 ```bash
+# install dependencies
 yarn install
-```
-
-2. Build the project:
-
-```bash
+# run build
 yarn build
+# start app
+yarn start
 ```
 
-3. Run the server:
-
 ```bash
-yarn start
+# install dependencies
+npm install
+# build
+npm run build
+# start
+npm run dev
 ```
 
 ## Configuration
