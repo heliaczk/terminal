@@ -15,20 +15,27 @@ export const whoami = async (args: string[]): Promise<string> => {
   return 'guest';
 };
 
+export const license = async (args?: string[]): Promise<string> => {
+  return 
+}
+
 export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
 export const gui = async (args: string[]): Promise<string> => {
-  window.open('https://gui.heliac.xyz', '_self');
-
-  return 'Opening GUI version...';
+  return `
+  Opening GUI version...
+  ...nothing happens...
+  ...still nothing...  
+  ...this is awkward.
+  `;
 };
 
 export const email = async (args: string[]): Promise<string> => {
-  window.open('mailto:hi@nm4tt72.com');
+  window.open('mailto:git@heliac.xyz');
 
-  return 'Opening mailto:hi@m4tt72.com...';
+  return 'Opening mailto:git@heliac.xyz...';
 };
 
 export const vi = async (args: string[]): Promise<string> => {
@@ -44,16 +51,12 @@ export const emacs = async (args?: string[]): Promise<string> => {
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-  }, 1000);
-
   return `Permission denied: unable to run the command '${args[0]}' as root.`;
 };
 
 export const repo = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://github.com/m4tt72/terminal', '_blank');
+    window.open('https://github.com/heliacfs/terminal', '_blank');
   }, 1000);
 
   return 'Opening repository...';
@@ -67,21 +70,24 @@ export const donate = async (args?: string[]): Promise<string> => {
 
 export const banner = (args?: string[]): string => {
   return `
+
+
+██╗  ██╗███████╗██╗     ██╗ █████╗  █████╗    ██╗  ██╗██╗   ██╗███████╗
+██║  ██║██╔════╝██║     ██║██╔══██╗██╔══██╗   ╚██╗██╔╝╚██╗ ██╔╝╚════██║
+███████║█████╗  ██║     ██║███████║██║  ╚═╝    ╚███╔╝  ╚████╔╝   ███╔═╝
+██╔══██║██╔══╝  ██║     ██║██╔══██║██║  ██╗    ██╔██╗   ╚██╔╝  ██╔══╝  
+██║  ██║███████╗███████╗██║██║  ██║╚█████╔╝██╗██╔╝╚██╗   ██║   ███████╗
+╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝  ╚═╝ ╚════╝ ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝  v${packageJson.version}
+║         Created by M4TT72
+║      Modified by me
 ║
-║  
-║     ██╗  ██╗███████╗██╗     ██╗ █████╗  █████╗    ██╗  ██╗██╗   ██╗███████╗
-║     ██║  ██║██╔════╝██║     ██║██╔══██╗██╔══██╗   ╚██╗██╔╝╚██╗ ██╔╝╚════██║
-║     ███████║█████╗  ██║     ██║███████║██║  ╚═╝    ╚███╔╝  ╚████╔╝   ███╔═╝
-║     ██╔══██║██╔══╝  ██║     ██║██╔══██║██║  ██╗    ██╔██╗   ╚██╔╝  ██╔══╝  
-║     ██║  ██║███████╗███████╗██║██║  ██║╚█████╔╝██╗██╔╝╚██╗   ██║   ███████╗
-║     ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝  ╚═╝ ╚════╝ ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝  v${packageJson.version}
-║     Created by
-║     Modifications for gamma
-╠════ Announcements ══════════════════════════════════════════════════════════════════════════════════╗
-║ - The project is open-source 🎉 type 'repo' to check out the repository    
-║ - New 🎉: Try out the new 'theme' command. See all available themes <a href="https://github.com/heliacfs/terminal/tree/master/docs/themes">in the docs</a>.
-║ - New 🎉: New command 'neofetch', for you linux.
-║
-╚════ Type 'help' to see list of available commands. ════════════════════════════════════════════════╝
+╚════|Announcements|══════════════════════╗
+INFO |-- The project is open-source 🎉 type 'repo' to check out the repository    
+  Type 'help' to see list of available commands.
+-------------------------------------------
 `;
 };
+function https(https: any): string | PromiseLike<string> {
+  throw new Error('Function not implemented.');
+}
+
