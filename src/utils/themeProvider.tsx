@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import Themes from '../../themes.json';
-import { Theme } from '../interfaces/theme';
-import config from '../../config.json';
+import React, { useEffect, useState } from "react";
+import Themes from "../../themes.json";
+import { Theme } from "../interfaces/theme";
+import config from "../../config.json";
 
 export interface ThemeContextType {
   setTheme: (name: string) => string;

@@ -1,4 +1,4 @@
-import { getWeather } from '../../api';
+import { getWeather } from "../../api";
 
 export const weather = async (args: string[]): Promise<string> => {
   const city = args.join('+');

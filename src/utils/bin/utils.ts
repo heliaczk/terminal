@@ -1,5 +1,5 @@
-import packageJson from '../../../package.json';
-import * as bin from './index';
+import packageJson from "../../../package.json";
+import * as bin from "./index";
 
 export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
@@ -38,8 +38,8 @@ export const license = async (args?: string[]): Promise<string> => {
   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE.
-  `
-}
+  `;
+};
 
 export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
@@ -108,4 +108,3 @@ export const banner = (args?: string[]): string => {
 |---------------------------
 `;
 };
-

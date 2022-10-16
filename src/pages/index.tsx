@@ -1,11 +1,11 @@
-import { useMatomo } from '@m4tt72/matomo-tracker-react';
-import Head from 'next/head';
-import React from 'react';
-import { History } from '../components/history';
-import { Input } from '../components/input';
-import { useShell } from '../utils/shellProvider';
-import { useTheme } from '../utils/themeProvider';
-import config from '../../config.json';
+import { useMatomo } from "@m4tt72/matomo-tracker-react";
+import Head from "next/head";
+import React from "react";
+import { History } from "../components/history";
+import { Input } from "../components/input";
+import { useShell } from "../utils/shellProvider";
+import { useTheme } from "../utils/themeProvider";
+import config from "../../config.json";
 
 interface IndexPageProps {
   inputRef: React.MutableRefObject<HTMLInputElement>;

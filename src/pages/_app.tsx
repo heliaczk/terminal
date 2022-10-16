@@ -1,10 +1,10 @@
-import { createInstance, MatomoProvider } from '@m4tt72/matomo-tracker-react';
-import Head from 'next/head';
-import React, { useEffect } from 'react';
-import { Layout } from '../components/layout';
-import '../styles/global.css';
-import { ShellProvider } from '../utils/shellProvider';
-import { ThemeProvider } from '../utils/themeProvider';
+import { createInstance, MatomoProvider } from "@m4tt72/matomo-tracker-react";
+import Head from "next/head";
+import React, { useEffect } from "react";
+import { Layout } from "../components/layout";
+import "../styles/global.css";
+import { ShellProvider } from "../utils/shellProvider";
+import { ThemeProvider } from "../utils/themeProvider";
 
 const App = ({ Component, pageProps }) => {
   const inputRef = React.useRef<HTMLInputElement>(null);

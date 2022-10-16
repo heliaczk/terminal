@@ -1,5 +1,5 @@
-import React from 'react';
-import { useTheme } from '../../utils/themeProvider';
+import React from "react";
+import { useTheme } from "../../utils/themeProvider";
 
 interface Props {
   children: React.ReactNode;
