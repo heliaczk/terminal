@@ -1,9 +1,9 @@
 {
   "name": "gamma-terminal",
-  "version": "0.2",
+  "version": "0.3",
   "license": "MIT",
   "author": {
-    "name": "heliacfs",
+    "name": "heliaczk",
     "url": "https://heliac.xyz",
     "email": "git@heliac.xyz"
   },

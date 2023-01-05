@@ -15,7 +15,7 @@ export const Ps1 = () => {
     <div>
       <span
         style={{
-          color: theme.yellow,
+          color: theme.red,
         }}
       >
         guest
@@ -39,7 +39,7 @@ export const Ps1 = () => {
           color: theme.white,
         }}
       >
-        :$ ~
+        :/var/www/:$ 
       </span>
     </div>
   );

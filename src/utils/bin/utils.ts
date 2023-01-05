@@ -15,11 +15,17 @@ export const whoami = async (args: string[]): Promise<string> => {
   return 'visitor';
 };
 
+export const vm = async (args: string[]): Promise<string> => {
+  return `
+  VELOVM v0.0.1-SNAPSHOT: Initializing...
+  ERROR: VELOVM is not ready anon.`;
+};
+
 export const license = async (args?: string[]): Promise<string> => {
   return `
   MIT License
 
-  Copyright (c) 2022 Yassine Fathi, heliacfs
+  Copyright (c) 2022 Yassine Fathi, heliaczk
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -78,7 +84,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
 
 export const repo = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://github.com/heliacfs/terminal', '_blank');
+    window.open('https://github.com/heliaczk/terminal', '_blank');
   }, 1000);
 
   return 'Opening repository...';
@@ -100,11 +106,9 @@ export const banner = (args?: string[]): string => {
 ██╔══██║██╔══╝  ██║     ██║██╔══██║██║  ██╗    ██╔██╗   ╚██╔╝  ██╔══╝  
 ██║  ██║███████╗███████╗██║██║  ██║╚█████╔╝██╗██╔╝╚██╗   ██║   ███████╗
 ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝  ╚═╝ ╚════╝ ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝  v${packageJson.version}
-        Created by M4TT72
-      Modified by me
-
-|---------------------------
-|INFO| Type 'help' to see list of available commands.
-|---------------------------
+|════════════════════════════
+|INFO| Type 'help' to see list 
+|INFO| of available commands.
+|════════════════════════════
 `;
 };
