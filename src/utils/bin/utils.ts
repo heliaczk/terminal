@@ -51,50 +51,45 @@ export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const gui = async (args: string[]): Promise<string> => {
-  return `
-  Opening GUI version...
-  ...nothing happens...
-  ...still nothing...  
-  ...this is awkward.
-  `;
-};
-
 export const email = async (args: string[]): Promise<string> => {
   window.open('mailto:git@heliac.xyz');
 
   return 'Opening mailto:git@heliac.xyz...';
 };
+/*
+  export const vi = async (args: string[]): Promise<string> => {
+    return `why use vi? try 'emacs'.`;
+  };
 
-export const vi = async (args: string[]): Promise<string> => {
-  return `why use vi? try 'emacs'.`;
-};
+  export const vim = async (args: string[]): Promise<string> => {
+    return `why use vim? try 'emacs'.`;
+  };
 
-export const vim = async (args: string[]): Promise<string> => {
-  return `why use vim? try 'emacs'.`;
-};
+  export const emacs = async (args?: string[]): Promise<string> => {
+    return `really? emacs? you should be using 'vim'`;
+  };
 
-export const emacs = async (args?: string[]): Promise<string> => {
-  return `really? emacs? you should be using 'vim'`;
-};
+  export const sudo = async (args?: string[]): Promise<string> => {
+    return `Permission denied: unable to run the command '${args[0]}' as root.`;
+  };
+*/
+/*
+  export const repo = async (args?: string[]): Promise<string> => {
+    setTimeout(function () {
+      window.open('https://github.com/heliaczk/terminal', '_blank');
+    }, 1000);
 
-export const sudo = async (args?: string[]): Promise<string> => {
-  return `Permission denied: unable to run the command '${args[0]}' as root.`;
-};
+    return 'Opening repository...';
+  };
+*/
 
-export const repo = async (args?: string[]): Promise<string> => {
-  setTimeout(function () {
-    window.open('https://github.com/heliaczk/terminal', '_blank');
-  }, 1000);
+/*
+  export const donate = async (args?: string[]): Promise<string> => {
+    window.open(packageJson.funding.url, '_blank');
 
-  return 'Opening repository...';
-};
-
-export const donate = async (args?: string[]): Promise<string> => {
-  window.open(packageJson.funding.url, '_blank');
-
-  return 'Opening donation url...';
-};
+    return 'Opening donation url...';
+  };
+*/
 
 export const banner = (args?: string[]): string => {
   return `
@@ -106,9 +101,11 @@ export const banner = (args?: string[]): string => {
 ██╔══██║██╔══╝  ██║     ██║██╔══██║██║  ██╗    ██╔██╗   ╚██╔╝  ██╔══╝  
 ██║  ██║███████╗███████╗██║██║  ██║╚█████╔╝██╗██╔╝╚██╗   ██║   ███████╗
 ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝  ╚═╝ ╚════╝ ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝  v${packageJson.version}
-|════════════════════════════
-|INFO| Type 'help' to see list 
-|INFO| of available commands.
-|════════════════════════════
+  𝗱𝗶𝘀𝗰𝗼𝗿𝗱 heliac#0001 
+  𝘁𝘄𝗶𝘁𝘁𝗲𝗿 0xheliac
+|̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷|̷
+|𝗜𝗡𝗙𝗢| 𝗧𝘆𝗽𝗲 '𝗵𝗲𝗹𝗽' 𝘁𝗼 𝘀𝗲𝗲 𝗹𝗶𝘀𝘁 
+|𝗜𝗡𝗙𝗢| 𝗼𝗳 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀.
+|̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷═̷|̷
 `;
 };

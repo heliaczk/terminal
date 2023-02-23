@@ -3,8 +3,10 @@
   "social": {
     "github": "heliaczk",
     "instagram": "",
-    "linkedin": ""
+    "linkedin": "",
+    "twitter": "0xheliac",
+    "discord": "heliac#0001"
   },
-  "theme": "vscodedark+",
+  "theme": "cobaltneon",
   "border": true
 }
