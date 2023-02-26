@@ -5,6 +5,7 @@ import { Input } from "../components/input";
 import { useShell } from "../utils/shellProvider";
 import { useTheme } from "../utils/themeProvider";
 import config from "../../config.json";
+import packageJson from "../../package.json";
 
 interface IndexPageProps {
   inputRef: React.MutableRefObject<HTMLInputElement>;
@@ -28,7 +29,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
   return (
     <>
       <Head>
-        <title>xyz.heliac.term.v0.2</title>
+        <title>xyz.heliac.term.v{packageJson.version}</title>
       </Head>
 
       <div
