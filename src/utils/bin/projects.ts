@@ -1,4 +1,4 @@
-import { getProjects } from "../../api";
+import { getProjects } from '../../api';
 
 export const projects = async (args: string[]): Promise<string> => {
   const projects = await getProjects();

@@ -1,6 +1,6 @@
-import React from "react";
-import { History as HistoryInterface } from "../../interfaces/history";
-import { Ps1 } from "../ps1";
+import React from 'react';
+import { History as HistoryInterface } from '../../interfaces/history';
+import { Ps1 } from '../ps1';
 
 interface Props {
   history: Array<HistoryInterface>;

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { commandExists } from "../../utils/commandExists";
-import { useShell } from "../../utils/shellProvider";
-import { handleTabCompletion } from "../../utils/tabCompletion";
-import { useTheme } from "../../utils/themeProvider";
-import { Ps1 } from "../ps1";
+import React, { useEffect, useState } from 'react';
+import { commandExists } from '../../utils/commandExists';
+import { useShell } from '../../utils/shellProvider';
+import { handleTabCompletion } from '../../utils/tabCompletion';
+import { useTheme } from '../../utils/themeProvider';
+import { Ps1 } from '../ps1';
 
 export const Input = ({ inputRef, containerRef }) => {
   const { theme } = useTheme();
@@ -56,7 +56,6 @@ export const Input = ({ inputRef, containerRef }) => {
       setCommand(value);
 
       setValue('');
-
     }
 
     if (event.key === 'ArrowUp') {

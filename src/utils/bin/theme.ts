@@ -1,4 +1,4 @@
-import Themes from "../../../themes.json";
+import Themes from '../../../themes.json';
 
 export const theme = async (
   args: string[],

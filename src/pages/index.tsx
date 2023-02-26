@@ -1,11 +1,11 @@
-import Head from "next/head";
-import React from "react";
-import { History } from "../components/history";
-import { Input } from "../components/input";
-import { useShell } from "../utils/shellProvider";
-import { useTheme } from "../utils/themeProvider";
-import config from "../../config.json";
-import packageJson from "../../package.json";
+import Head from 'next/head';
+import React from 'react';
+import { History } from '../components/history';
+import { Input } from '../components/input';
+import { useShell } from '../utils/shellProvider';
+import { useTheme } from '../utils/themeProvider';
+import config from '../../config.json';
+import packageJson from '../../package.json';
 
 interface IndexPageProps {
   inputRef: React.MutableRefObject<HTMLInputElement>;
@@ -17,8 +17,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
 
   const containerRef = React.useRef(null);
 
-  React.useEffect(() => {
-  }, []);
+  React.useEffect(() => {}, []);
 
   React.useEffect(() => {
     if (inputRef.current) {

@@ -1,5 +1,5 @@
-import packageJson from "../../../package.json";
-import * as bin from "./index";
+import packageJson from '../../../package.json';
+import * as bin from './index';
 
 export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');

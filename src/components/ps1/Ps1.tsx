@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useTheme } from "../../utils/themeProvider";
+import React, { useEffect, useState } from 'react';
+import { useTheme } from '../../utils/themeProvider';
 
 export const Ps1 = () => {
   const [hostname, setHostname] = useState('');
@@ -39,7 +39,7 @@ export const Ps1 = () => {
           color: theme.white,
         }}
       >
-        :/var/www/:$ 
+        :/var/www/:$
       </span>
     </div>
   );

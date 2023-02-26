@@ -1,4 +1,4 @@
-import config from "../../../config.json";
+import config from '../../../config.json';
 
 export const github = async (args: string[]): Promise<string> => {
   window.open(`https://github.com/${config.social.github}/`);
@@ -7,6 +7,5 @@ export const github = async (args: string[]): Promise<string> => {
 };
 
 export const discord = async (args: string[]): Promise<string> => {
-
   return 'Discord ID: `heliac#0001`';
 };

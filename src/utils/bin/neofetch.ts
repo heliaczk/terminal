@@ -1,6 +1,6 @@
-import { formatDistanceToNow } from "date-fns";
-import packageJson from "../../../package.json";
-import themes from "../../../themes.json";
+import { formatDistanceToNow } from 'date-fns';
+import packageJson from '../../../package.json';
+import themes from '../../../themes.json';
 
 const macos = `
                     'c.
@@ -142,7 +142,7 @@ const getInfo = () => {
     visitedAt,
   )}\n`;
   message += `<span style="color: ${mainColor}">Author</span>: ${packageJson.author.name} (${packageJson.author.email})\n`;
- 
+
   return message;
 };
 
