@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@m4tt72/matomo-tracker-react': ^0.6.2
   '@types/node': ^18.0.3
   '@types/react': ^18.0.15
   '@typescript-eslint/eslint-plugin': ^5.30.5
@@ -26,7 +25,6 @@ specifiers:
   typescript: ^4.7.2
 
 dependencies:
-  '@m4tt72/matomo-tracker-react': 0.6.2_react@18.2.0
   axios: 0.27.2
   cowsay-browser: 1.1.8
   date-fns: 2.29.3
@@ -100,19 +98,6 @@ packages:
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
-
-  /@m4tt72/matomo-tracker-js/0.6.2:
-    resolution: {integrity: sha512-pgY7ymfRh52yUb2h7fI12H1NHAkCWU1syuk7vivUx2ANfPNbqO7aAkaUgsHCp9nRdCrWN31YILQSiW61paR7GA==}
-    dev: false
-
-  /@m4tt72/matomo-tracker-react/0.6.2_react@18.2.0:
-    resolution: {integrity: sha512-SrcMZJHPqpx2gf6wPF4gA5Lmm2LAc0GQJChBZrDMXb6iKJxm9h1b9t6xgvqDsXqDMXRj4y68wH41Z490XTc5hA==}
-    peerDependencies:
-      react: '>= 16.8.0'
-    dependencies:
-      '@m4tt72/matomo-tracker-js': 0.6.2
-      react: 18.2.0
-    dev: false
 
   /@next/env/12.3.4:
     resolution: {integrity: sha512-H/69Lc5Q02dq3o+dxxy5O/oNxFsZpdL6WREtOOtOM1B/weonIwDXkekr1KV5DPVPr12IHFPrMrcJQ6bgPMfn7A==}
