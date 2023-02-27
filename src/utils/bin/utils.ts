@@ -22,9 +22,6 @@ export const vm = async (args: string[]): Promise<string> => {
   VELOVM v0.0.1-SNAPSHOT: Initializing...
   ERROR: VELOVM is not ready anon.`;
 };
-export const lol = async (args: string[]): Promise<Image> => {
-  return Image(test);
-};
 
 export const license = async (args?: string[]): Promise<string> => {
   return `
