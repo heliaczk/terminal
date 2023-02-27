@@ -2,8 +2,6 @@
 
 A terminal style website
 
-![screenshot](/docs/screenshot.png)
-
 ## why?
 
 TL;DR: why not?
